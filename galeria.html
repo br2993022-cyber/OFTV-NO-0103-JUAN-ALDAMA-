@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Galería Escolar | OFTV No. 0103 "Juan Aldama"</title>
+
+    <meta name="description" content="Galería fotográfica de instalaciones, eventos y actividades escolares de la Telesecundaria OFTV No. 0103 Juan Aldama.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Logo -->
+<div class="top">
+  <img src="assets/logo_transparent.jpeg" alt="Logo de la escuela">
+</div>
+
+<!-- Menú -->
+<nav id="sidebar" class="sidebar">
+  <a href="index.html">Inicio</a>
+  <a href="acerca.html">Acerca de la telesecundaria</a>
+  <a href="oferta.html">Oferta educativa</a>
+  <a href="noticias.html">Noticias y avisos</a>
+  <a href="politicas.html">Políticas y reglamentos</a>
+  <a href="galeria.html">Imágenes de la escuela</a>
+  <a href="docentes.html">Plantilla docente</a>
+</nav>
+
+<!-- Encabezado -->
+<header>
+  <div class="row">
+    <button class="btn" onclick="toggleMenu()">☰</button>
+    <div class="title">OFTV NO 0103 "JUAN ALDAMA"</div>
+  </div>
+</header>
+
+<!-- Banner -->
+<div class="gallery-banner">
+
+  <h1>Galería Escolar</h1>
+
+  <p>
+    Conoce las instalaciones, actividades académicas y eventos de la escuela.
+  </p>
+
+</div>
+
+<!-- INSTALACIONES -->
+<div class="gallery-section">
+  <h2>Instalaciones</h2>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item"><img src="assets/F16.jpeg" title="Fachada de la escuela" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F1.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F15.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F14.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F19.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F28.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F9.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F22.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F1.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F3.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F23.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F24.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F26.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F27.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/computo1 (1).jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/computo2.jpeg" onclick="openImg(this.src)"></div>
+
+  </div>
+</div>
+
+<!-- ACTIVIDADES -->
+<div class="gallery-section">
+  <h2>Actividades Académicas</h2>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item"><img src="assets/F2.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F5.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F6.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F10.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/F11.jpeg" onclick="openImg(this.src)"></div>
+
+  </div>
+</div>
+
+<!-- EVENTOS -->
+<div class="gallery-section">
+  <h2>Eventos Escolares</h2>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/f.jpeg" onclick="openImg(this.src)"></div>
+
+  </div>
+</div>
+
+<!-- CEREMONIAS -->
+<div class="gallery-section">
+  <h2>Ceremonias y Reconocimientos</h2>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+    <div class="gallery-item"><img src="assets/.jpeg" onclick="openImg(this.src)"></div>
+
+  </div>
+</div>
+
+<!-- Lightbox (imagen ampliada) -->
+<div class="lightbox" id="lightbox" onclick="closeImg()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<!-- Pie de página -->
+<footer>
+  <h2>OFTV No. 0103 "Juan Aldama"</h2>
+
+  <p>
+    La mayor satisfacción en la educación es formar personas con valores y conocimiento.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -438,100 +438,6 @@ gap:25px;
 margin-top:35px;
 }
 
-
-.docente-card:hover{
-transform:translateY(-8px);
-}
-
-.docente-card img{
-width:100%;
-height:320px;
-object-fit:cover;
-}
-
-.docente-card h3{
-margin:20px 15px 10px;
-color:#1f3550;
-font-size:1.4rem;
-}
-
-.grado{
-font-weight:bold;
-color:#59c7f5;
-margin-bottom:10px;
-padding:0 15px;
-}
-
-.docente-card p{
-padding:0 20px 20px;
-line-height:1.7;
-color:#35506b;
-}
-
-@media(max-width:768px){
-
-.docente-card img{
-height:260px;
-}
-
-.docentes-grid{
-grid-template-columns:1fr;
-}
-
-}
-
-@keyframes aparecer{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-@media(max-width:768px){
-.docente-card img{
-height:240px;
-}
-}
-
-@media(min-width:1024px){
-.docente-card img{
-height:340px;
-}
-}
-/* Efecto al pasar el mouse */
-
-.docente-card:hover{
-transform:translateY(-12px) scale(1.03);
-box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-/* Zoom en la imagen */
-
-.docente-card img{
-width:100%;
-height:320px;
-object-fit:cover;
-transition:transform .5s ease;
-}
-
-.docente-card:hover img{
-transform:scale(1.08);
-}
-
-/* Animación del nombre */
-
-.docente-card h3{
-transition:.3s;
-}
-
-.docente-card:hover h3{
-color:#59c7f5;
-}
-/* Animación de aparición */
-
 .docente-card{
 background:#fff;
 border-radius:30px;
@@ -542,6 +448,52 @@ transition:all .4s ease;
 animation:aparecer .8s ease;
 }
 
+.docente-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.docente-card img{
+display:block;
+width:100%;
+height:320px;
+object-fit:cover;
+transition:transform .5s ease;
+}
+
+.docente-card:hover img{
+transform:scale(1.05);
+}
+
+.docente-card h3{
+margin:20px 15px 10px;
+font-size:1.35rem;
+color:#1f3550;
+line-height:1.35;
+transition:.3s;
+word-break:break-word;
+overflow-wrap:break-word;
+hyphens:auto;
+}
+
+.docente-card:hover h3{
+color:#59c7f5;
+}
+
+.grado{
+padding:0 15px 20px;
+font-weight:bold;
+color:#59c7f5;
+font-size:1rem;
+text-wrap:balance;
+}
+
+.docente-card p{
+padding:0 20px 20px;
+line-height:1.7;
+color:#35506b;
+}
+
 @keyframes aparecer{
 from{
 opacity:0;
@@ -553,39 +505,42 @@ transform:translateY(0);
 }
 }
 
-/* Efecto al pasar el mouse */
+@media(max-width:768px){
 
-.docente-card:hover{
-transform:translateY(-12px) scale(1.03);
-box-shadow:0 15px 35px rgba(0,0,0,.15);
+.docentes-grid{
+grid-template-columns:1fr;
+gap:20px;
 }
 
-/* Zoom en la imagen */
+.docente-card{
+width:100%;
+max-width:330px;
+margin:auto;
+}
 
 .docente-card img{
-width:100%;
 height:300px;
-object-fit:cover;
-transition:transform .5s ease;
 }
-
-.docente-card:hover img{
-transform:scale(1.08);
-}
-
-/* Animación del nombre */
 
 .docente-card h3{
-transition:.3s;
+font-size:1.1rem;
 }
 
-.docente-card:hover h3{
-color:#59c7f5;
+.grado{
+font-size:.95rem;
+}
+
+}
+
+@media(min-width:1024px){
+
+.docente-card img{
+height:340px;
+}
+
 }
 
 /* ===== AVANCE DE PLANES Y PROGRAMAS ===== */
-
-/* ===== AVANCE SIMPLE SIN CAJAS ANIDADAS ===== */
 
 .info-box ul{
 margin-top:15px;
@@ -640,14 +595,9 @@ box-shadow:0 15px 30px rgba(0,0,0,.12);
 .practica-card h3{
 text-align:center;
 margin-bottom:15px;
-color:#1f3550;
-}
-.practica-card h3{
-margin-bottom:15px;
 font-size:1.3rem;
 color:#1f3550;
 }
-
 .practica-card p{
 line-height:1.8;
 color:#35506b;
@@ -884,10 +834,6 @@ margin-bottom:10px;
 color:#0c4a6e;
 }
 
-.info-box ul{
-padding-left:25px;
-line-height:1.9;
-}
 .img-pequena{
     width:50%;
     max-width:450px;
@@ -900,13 +846,13 @@ line-height:1.9;
 @media(max-width:768px){
 
 .infraestructura-imgs{
-grid-template-columns:1fr;
+flex-direction:column;
 }
 
 .infraestructura-imgs img{
+width:100%;
 height:220px;
 }
-
 }
 .destacado-box{
 background:#eef8ff;
@@ -947,19 +893,6 @@ color:#35506b;
     line-height:1.6;
 }
 
-.docente-card h3{
-    font-size:1rem;
-}
-
-.docente-card img{
-    height:180px;
-    object-fit:cover;
-}
-
-.docentes-grid{
-    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-    gap:15px;
-}
 }
 .titulo-seccion{
 text-align:center;
